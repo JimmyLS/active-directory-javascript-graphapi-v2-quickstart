@@ -11,8 +11,8 @@ const msalConfig = {
   auth: {
     clientId: "32a57c0a-2f0a-4942-8093-bc8b906f025f",
     authority: "https://login.microsoftonline.com/common",
-    redirectUri: "https://localhost",
-    //redirectUri: "http://sts.azurehybrid.tk"
+    //redirectUri: "https://localhost",
+    redirectUri: "https://jimmytestspa.azurewebsites.net"
   },
     system: {
       logger: new Msal.Logger(
@@ -25,6 +25,7 @@ const msalConfig = {
   cache: {
     cacheLocation: "localStorage", // This configures where your cache will be stored
     storeAuthStateInCookie: true, // Set this to "true" if you are having issues on IE11 or Edge
+    secureCookies: true,
   }
 };  
   
