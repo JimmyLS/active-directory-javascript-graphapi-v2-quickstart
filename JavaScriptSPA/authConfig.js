@@ -13,6 +13,7 @@ const msalConfig = {
     authority: "https://login.microsoftonline.com/common",
     redirectUri: "https://localhost",
     //redirectUri: "http://sts.azurehybrid.tk"
+    postLogoutRedirectUri: "https://localhost"
   },
     system: {
       logger: new Msal.Logger(

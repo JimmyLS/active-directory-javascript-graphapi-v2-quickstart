@@ -8,8 +8,8 @@ const morgan = require('morgan');
 const path = require('path');
 const fs = require('fs');
 const https = require('https');
-var privateKey  = fs.readFileSync('sslcert/3571716_sts.azurehybrid.tk.key', 'utf8');
-var certificate = fs.readFileSync('sslcert/3571716_sts.azurehybrid.tk_public.crt', 'utf8');
+var privateKey  = fs.readFileSync('sslcert/3_sts.azurehybrid.tk.key', 'utf8');
+var certificate = fs.readFileSync('sslcert/2_sts.azurehybrid.tk.crt', 'utf8');
 var credentials = {key: privateKey, cert: certificate};
 
 //initialize express.
